@@ -6,3 +6,14 @@ const sectBtns = document.querySelectorAll('.controlls');
 const secBtn = document.querySelectorAll('.control');
 // selecting body content
 const allSections = document.querySelector('.main-content');
+
+// *******function to select between the section icons*********
+function PageTransition(){
+    // Button click active class
+    for(let i = 0; i < secBtn.length; i++){
+        secBtn[i].addEventListener('click', function(){
+            let currentBtn = document.querySelectorAll('.active-btn');
+            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
+            this.className += 'active-btn';
+        })
+    }
