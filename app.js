@@ -7,7 +7,7 @@ const secBtn = document.querySelectorAll('.control');
 // selecting body content
 const allSections = document.querySelector('.main-content');
 
-// *******function to select between the section icons*********
+// ******function to select between the section icons********
 function PageTransition(){
     // Button click active class
     for(let i = 0; i < secBtn.length; i++){
